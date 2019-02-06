@@ -28,14 +28,6 @@ All the recommended files and directories should look like the following structu
 * Mongoose
 * Cheerio
 
-## License
-Distributed under the [MIT] license.
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 ## Authors
 ### Meta
 Paoge Moua
@@ -43,13 +35,17 @@ Paoge Moua
 * Portfolio: https://paogemoua.github.io/
 * GitHub: https://github.com/paogemoua
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
 ## Reference
 
 ## Project Status
 1.31.2019 Project open - in progress
 
 <!-- Linked -->
-[MIT]: https://choosealicense.com/licenses/mit/
 [Node.js]: https://nodejs.org/en/download/
 [MySQL Workbench]: https://dev.mysql.com/downloads/workbench/
 [dotenv]: https://www.npmjs.com/package/dotenv
