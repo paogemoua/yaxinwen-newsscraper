@@ -19,14 +19,22 @@ All the recommended files and directories should look like the following structu
 <!-- * ![Main Page](./public/images/...) -->
 
 ## Technologies Used
-* HTML
-* CSS
-* Node.js
-* Express.js
-* Handlebars
-* MongoDB
-* Mongoose
-* Cheerio
+* [HTML]
+* [CSS]
+* [BootStrap]
+* [Node.js]
+* [Express.js]
+* [Handlebars]
+* [MongoDB]
+* [Mongoose]
+* [Cheerio]
+
+### npm
+* [express]
+* [express-handlebars]
+* [mongoose]
+* [cheerio]
+* [axios]
 
 ## Authors
 ### Meta
@@ -45,8 +53,13 @@ Please make sure to update tests as appropriate.
 ## Project Status
 1.31.2019 Project open - in progress
 
+### Pending Updates
+* User accounts for saving articles & comments
+
 <!-- Linked -->
-[Node.js]: https://nodejs.org/en/download/
+[Yaxinwen]: https://paogemoua.github.io/yaxinwen-newsscraper/
+[Yaxinwen GitHub]: https://github.com/paogemoua/yaxinwen-newsscraper
+
 [MySQL Workbench]: https://dev.mysql.com/downloads/workbench/
 [dotenv]: https://www.npmjs.com/package/dotenv
 [express]: https://www.npmjs.com/package/express
