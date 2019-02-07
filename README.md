@@ -3,7 +3,7 @@
 ## Description
 
 ### Deployment
-* [Yaxinwen]
+* [Yaxinwen Heroku]
 * [Yaxinwen GitHub]
 
 ## Visuals
@@ -40,6 +40,7 @@ All the recommended files and directories should look like the following structu
 ### Meta
 Paoge Moua
 * Contact info: paoge.moua@gmail.com OR pobzeb.m@gmail.com
+* LinkedIn: 
 * Portfolio: https://paogemoua.github.io/
 * GitHub: https://github.com/paogemoua
 
@@ -57,7 +58,7 @@ Please make sure to update tests as appropriate.
 * User accounts for saving articles & comments
 
 <!-- Linked -->
-[Yaxinwen]: https://paogemoua.github.io/yaxinwen-newsscraper/
+[Yaxinwen Heroku]: https://paogemoua.github.io/yaxinwen-newsscraper/
 [Yaxinwen GitHub]: https://github.com/paogemoua/yaxinwen-newsscraper
 
 [MySQL Workbench]: https://dev.mysql.com/downloads/workbench/
