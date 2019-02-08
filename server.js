@@ -56,12 +56,11 @@ app.get("/scrape", (reg, res) => {
 });
 
 app.get("/articles", (req, res) => {
-    db.Article.find({}).then((dbArticle)) => {
+    db.Article.find({}).then((dbArticle)); {
         res.render("index", { dbArticle })
-    }).catch((err) => {
+        .catch((err) => {
         res.json(err);
     });
-})
 
 app.get("/articles/:id", (req, res) => {
     db.Article.findOne({ _id: req.params.id})
@@ -71,7 +70,7 @@ app.get("/articles/:id", (req, res) => {
     .catch((err) => {
         res.json(err);
     })
-})
+});
 
 app.post("/article/:id", (req, res) => {
     db.Note.create(req.body).then((dbNote) => db.Article.findOneAndUpdate({_id: req.params.id}, {note: dbNote._id}, {new: true}))
@@ -94,4 +93,3 @@ app.delete("/articles/:id", (req, res) => {
 app.listen(PORT, () => {
     console.log(`App running on port ${ PORT }! Refer to ${ PORT } for the app.`);
 });
-
