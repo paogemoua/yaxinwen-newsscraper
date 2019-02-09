@@ -1,7 +1,8 @@
 var mongoose = require("mongoose");
-var schema = mongoose.Schema;
+var schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
 
-var articleSchema = new mongoose.Schema({
+var articleSchema = new Schema({
     title: {
         type: String,
         required: true, 
@@ -21,6 +22,10 @@ var articleSchema = new mongoose.Schema({
         type: Schema.ObjectId,
         ref: 'Comment'
     }]
+});
+
+articleSchema.virtual('categoryId').get(function() {
+    return this._id;
 });
 
 var Article = mongoose.model("Article", articleSchema);
