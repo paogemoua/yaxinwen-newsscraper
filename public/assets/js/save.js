@@ -30,10 +30,43 @@ $(document).ready(function() {
                     $("#comments-list".append("<div class='comment-div'><p class='comment'>" + data.comments[i].body + "</p></div>");
                 }
             }
-            $("footer.modal-card-foot").html(<"<button id='save-comment' class='button is-success' data-id='" + data._id + "'>Save Comment</button>")
+            $("footer.modal-card-foot").html("<button id='save-comment' class='button is-success' data-id='" + data._id + "'>Save Comment</button>")
         });
     });
 
-    // Line 52
-    $(document).on
-})
+    $(document).on("click", ".delete", function() {
+        $(".modal".toggleClass("is-active");
+        $("#comments-list").html("<p>What do you think? Be the first to comment on this article.</p>");
+    });
+
+	$(document).on("click", "#save-comment", function() {
+        var articleID = $(this).attr("data-id");
+        $.ajax({
+          method: "POST",
+          url: "/comment/" + articleID,
+          data: {
+            body: $("#new-comment-field").val()
+          }
+        }).done(function(data) {
+        console.log("data: ", data);
+          });
+  
+        $("#new-comment-field").val("");
+        $(".modal").toggleClass("is-active");
+      });
+  
+      $(document).on("click", ".delete-comment", function() {
+      });
+  
+      $(document).on("click", ".delete-button", function() {
+          var articleID = $(this).attr("data-id");
+          console.log(articleID);
+        $.ajax({
+          method: "POST",
+          url: "/delete/" + articleID,
+          data: {
+            saved: false
+          }
+        });
+      });
+});
